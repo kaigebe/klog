@@ -1,6 +1,8 @@
 #ifndef LOG_MEM_H_
 #define LOG_MEM_H_
 
+class AutoLock;
+
 void MessagePop(void);
 
 void MessagePush(string tag,string msg);
