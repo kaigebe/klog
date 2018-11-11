@@ -1,6 +1,15 @@
 CXX=g++
+CC=gcc
+AR=ar
 RM=rm
-cfg:
-	${CXX} -c config.cpp
+mem:
+	@$(CXX) -c config.cpp
+	@$(AR) crv libcfg.a config.o
+	@$(CXX) -fPIC -shared -o libcfg.so config.cpp
+.PHONY:
+
 clean:
-	${RM} *.out *.o
+	@${RM} -rf *.a *.so *.out
+	
+
+
