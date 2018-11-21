@@ -26,6 +26,10 @@ public:
 };
 
 queue<string> g_queueLogMessage;
+queue<string> g_queueLogMessageError;
+queue<string> g_queueLogMessageDebug;
+queue<string> g_queueLogmessageWarning;
+queue<string> g_queueLogmessageInfo;
 queue<string> g_queueLogTag;
 
 void MessagePush(string tag,string msg)

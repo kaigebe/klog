@@ -2,13 +2,13 @@
 #ifndef LOG_API_H
 #define LOG_API_H
 
-void (*Log)(string tag,string msg);
+/*
 void LOG(string tag,string msg);
 void LogD(string tag,string msg);
 void LogE(string tag,string msg);
 void LogI(string tag,string msg);
 void LogW(string tag,string msg);
-
+void LogV(string tag,string msg);
 
 #define THRESHOLD_OUT 3
 #define THRESHOLD_ERR 1
@@ -31,6 +31,6 @@ void LogW(string tag,string msg);
 #define LogE(x...) LogPrint(ERROR,x)
 #define LogV(x...) LogPrint(VERBOSE,x)
 #define LogW(x...) LogPrint(WARNING,x)
-
+*/
 #endif //LOG_API_H
 
